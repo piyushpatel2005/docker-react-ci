@@ -1,0 +1,8 @@
+sudo: required # super user permissions required
+services:
+  - docker # docker is required
+before_install:
+  - docker build -t piyushpatel2005/docker-react-ci -f Dockerfile.dev .
+
+script:
+  - docker run piyushpatel/docker-react-ci npm run test -- --coverage
