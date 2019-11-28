@@ -46,3 +46,5 @@ Create Git repository and set up code with Dockerfile on Git repository.
 Now create an account on TravisCI. Travis can lookup code changes in Github repository and Travis will run tests and once tests pass Travis can deploy to AWS.
 
 To instruct Travis, we need to use Travis YAML (`.travis.yml`) file. 
+Create Docker environment using Amazon Elastic Beanstalk.
+To deploy our app once tests pass on Travis , we have to add another section `deploy` to travis file.
