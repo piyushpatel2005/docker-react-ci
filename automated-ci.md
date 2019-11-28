@@ -41,3 +41,8 @@ At the end, we can test using:
 docker bulid .
 docker run -p 8080:80 <image_id>
 ```
+
+Create Git repository and set up code with Dockerfile on Git repository.
+Now create an account on TravisCI. Travis can lookup code changes in Github repository and Travis will run tests and once tests pass Travis can deploy to AWS.
+
+To instruct Travis, we need to use Travis YAML (`.travis.yml`) file. 
