@@ -9,12 +9,12 @@ script:
   - docker run piyushpatel2005/docker-react-ci npm run test -- --coverage --watchAll=false
 
 # deploy to AWS beanstalk
-deploy: 
-  provider: elasticbeanstalk
-  region: "us-west-1"
-  app: "docker-react-ci" # app name on AWS Elasticbeanstalk
-  env: "DockerReactCi-env"
-  bucket_name: "<app-bucketname>"
-  bucket_path: "docker-react-ci" # check bucket path inside S3 bucket
-  on:
-    branch: master # deploy only when code pushed to master
+# deploy: 
+#   provider: elasticbeanstalk
+#   region: "us-west-1"
+#   app: "docker-react-ci" # app name on AWS Elasticbeanstalk
+#   env: "DockerReactCi-env"
+#   bucket_name: "<app-bucketname>"
+#   bucket_path: "docker-react-ci" # check bucket path inside S3 bucket
+#   on:
+#     branch: master # deploy only when code pushed to master
